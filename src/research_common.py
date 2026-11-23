@@ -77,20 +77,28 @@ def normalize(text):
     return unicodedata.normalize('NFKC', str(text or '')).casefold()
 
 
+def _contains(norm, word):
+    """中文詞用子字串；純 ASCII 詞須為完整單字，避免 BaP 命中 bap（印地語）等。"""
+    w = normalize(word)
+    if w.isascii():
+        return re.search(r'(?<![a-z0-9])' + re.escape(w) + r'(?![a-z0-9])', norm) is not None
+    return w in norm
+
+
 def keyword_hits(text, keywords):
-    """Return matched keywords (oil types and terms) by normalized substring."""
+    """Return matched keywords (oil types and terms)."""
     norm = normalize(text)
     hits = []
     for group in ('oil_types', 'terms'):
         for word in keywords[group]:
-            if normalize(word) in norm and word not in hits:
+            if _contains(norm, word) and word not in hits:
                 hits.append(word)
     return hits
 
 
 def oil_type_hits(text, keywords):
     norm = normalize(text)
-    return {w for w in keywords['oil_types'] if normalize(w) in norm}
+    return {w for w in keywords['oil_types'] if _contains(norm, w)}
 
 
 def excluded(text, phrases):
@@ -99,7 +107,9 @@ def excluded(text, phrases):
 
 
 def language(text):
-    """粗略判定 zh-Hant / zh-Hans / zh（無可區分字）/ other。"""
+    """粗略判定 zh-Hant / zh-Hans / zh（無可區分字）/ other（無中文字）/ ja-ko（含假名或韓文）。"""
+    if any('぀' <= c <= 'ヿ' or '가' <= c <= '힯' for c in text):
+        return 'ja-ko'
     trad = sum(c in _TRAD for c in text)
     simp = sum(c in _SIMP for c in text)
     if trad or simp:
@@ -143,3 +153,16 @@ def rfc3339_bounds(settings):
 
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec='seconds')
+
+
+def read_dotenv(root):
+    """讀取專案根目錄 .env（已列入 .gitignore）。鍵名不分大小寫、容許 `=` 前後空白；不寫入 os.environ。"""
+    path = Path(root) / '.env'
+    values = {}
+    if path.exists():
+        for line in path.read_text(encoding='utf-8-sig').splitlines():
+            line = line.strip()
+            if line and not line.startswith('#') and '=' in line:
+                name, _, value = line.partition('=')
+                values[name.strip().upper()] = value.strip().strip('"\'')
+    return values

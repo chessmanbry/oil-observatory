@@ -163,7 +163,7 @@ class ResearchTests(unittest.TestCase):
         self.assertEqual([v['video_id'] for v in top], ['v4', 'v2'])
         self.assertEqual(top[0]['rank'], 1)
         self.assertEqual(top[0]['review_status'], '需人工覆核')
-        for key, expected in (('brand_channel', 1), ('paid_placement', 1), ('excluded_phrase', 1), ('no_keyword', 1), ('out_of_range', 1)):
+        for key, expected in (('brand_channel', 1), ('paid_placement', 1), ('excluded_phrase', 1), ('no_keyword_in_title', 1), ('out_of_range', 1)):
             self.assertEqual(audit[key], expected, key)
         self.assertEqual(audit['eligible'], 3)
 

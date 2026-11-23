@@ -29,12 +29,15 @@ youtube_discovery:
   target: 100
   # 每支影片標題＋說明須命中至少一個食用油關鍵詞；排除詞命中則剔除。
   require_oil_keyword: true
+  # 標題必須命中關鍵詞（僅說明欄命中者多為食譜或業配，主題不在食用油）。
+  require_keyword_in_title: true
   # 品牌官方頻道：填頻道 ID（UC 開頭），人工覆核後維護。
-  excluded_channel_ids: []
+  # 已確認品牌官方油品頻道（2026-11-24 依觀看榜人工判斷；其餘請公司覆核後補入）。
+  excluded_channel_ids: [UC3FIKrkNL1YHpd_IwCTJASg, UC5b5LfRL9ZzMPNDPCFR4HOg]
   # 標題／說明含以下字樣視為廣告或業配候選，列入人工覆核欄，不自動刪除。
   ad_markers: [業配, 廣告, 贊助, 合作, 團購, 優惠碼, 折扣碼, 開箱, '#ad', sponsored]
 
-exclude_phrases: [機油, 汽油, 柴油, 精油, 按摩油, 保養油, 卸妝油, 護髮油, 嬰兒油, 潤滑油]
+exclude_phrases: [機油, 汽油, 柴油, 精油, 按摩油, 保養油, 卸妝油, 護髮油, 嬰兒油, 潤滑油, 魚油, 魚肝油, 磷蝦油, 保健食品, 營養補充]
 
 annotation:
   question_terms: [嗎, 是否, 請問, 想知道, 可不可以, 能不能, 會不會, 是不是, '?', '？']

@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 
 from .collectors import YouTubeCollector
-from .research_common import (deidentify, excluded, in_window, keyword_hits, language,
+from .research_common import (read_dotenv, deidentify, excluded, in_window, keyword_hits, language,
                               now_iso, read_json, rfc3339_bounds, taipei_day, write_json)
 
 API = 'https://www.googleapis.com/youtube/v3/'
@@ -45,16 +45,20 @@ class Client:
         return self.units['search'] * 100 + self.units['videos']
 
 
-def _key(spec, environ):
-    key = (environ if environ is not None else os.environ).get(spec['api_key_env'], '').strip()
+def _key(spec, environ, root=None):
+    env = environ if environ is not None else os.environ
+    key = env.get(spec['api_key_env'], '').strip()
+    if not key and environ is None and root is not None:
+        dotenv = read_dotenv(root)
+        key = (dotenv.get(spec['api_key_env'].upper()) or dotenv.get('YT_API_KEY') or '').strip()
     if not key:
-        raise ValueError(f'缺少環境變數 {spec["api_key_env"]}；請勿把金鑰寫入設定檔。')
+        raise ValueError(f'缺少 {spec["api_key_env"]}（環境變數或 .env 的 YT_API_KEY）；請勿把金鑰寫入設定檔。')
     return key
 
 
 def discover(settings, opener=None, environ=None):
     spec = settings['research']['youtube_discovery']
-    client = Client(_key(spec, environ), spec['timeout_seconds'], spec['max_search_requests'], opener)
+    client = Client(_key(spec, environ, settings['root']), spec['timeout_seconds'], spec['max_search_requests'], opener)
     after, before = rfc3339_bounds(settings)
     found = {}
     for word in settings['keywords']['oil_types'] + settings['keywords']['terms']:
@@ -79,6 +83,7 @@ def discover(settings, opener=None, environ=None):
         page = client.get('videos', 1, part='snippet,statistics,paidProductPlacementDetails',
                           id=','.join(ids[i:i + 50]), maxResults=50)
         videos.extend(page.get('items', []))
+    write_json(settings['out'] / 'raw/youtube_search_raw.json', {'acquired_at': now_iso(), 'found': found, 'videos': videos})
     ranked, audit = rank(videos, found, settings)
     manifest = {'source': 'YouTube', 'acquired_at': now_iso(), 'date_from': settings['start'].isoformat(),
                 'date_to': settings['end'].isoformat(), 'keywords_source': settings['keywords_source'],
@@ -117,14 +122,18 @@ def rank(videos, found, settings):
             audit['paid_placement'] += 1
             continue
         hits = keyword_hits(text, settings['keywords'])
+        if spec.get('require_keyword_in_title', True) and not keyword_hits(snip.get('title', ''), settings['keywords']):
+            audit['no_keyword_in_title'] += 1
+            continue
         if spec.get('require_oil_keyword', True) and not hits:
             audit['no_keyword'] += 1
             continue
         if excluded(text, settings['exclude']):
             audit['excluded_phrase'] += 1
             continue
-        if language(snip.get('title', '') + snip.get('description', '')) == 'zh-Hans':
-            audit['simplified_chinese'] += 1
+        lang = language(snip.get('title', '') + snip.get('description', ''))
+        if lang not in ('zh-Hant', 'zh'):
+            audit['not_traditional_chinese'] += 1
             continue
         if 'viewCount' not in stats:
             audit['hidden_views'] += 1
@@ -172,6 +181,20 @@ def write_appendix(path, videos, roles=None):
                              'spread': counts['spread'], 'question': counts['question'], 'clarify': counts['clarify']})
 
 
+def rerank(settings):
+    """用已保存的原始 API 結果重新篩選排名，不消耗配額（調整排除清單或規則後使用）。"""
+    raw = read_json(settings['out'] / 'raw/youtube_search_raw.json')
+    ranked, audit = rank(raw['videos'], raw['found'], settings)
+    manifest = {'source': 'YouTube', 'acquired_at': raw['acquired_at'], 'reranked_at': now_iso(),
+                'date_from': settings['start'].isoformat(), 'date_to': settings['end'].isoformat(),
+                'keywords_source': settings['keywords_source'], 'keywords': settings['keywords'],
+                'candidates': len(raw['videos']), 'audit': dict(audit), 'target': settings['research']['youtube_discovery']['target'],
+                'quota_units': 0, 'search_requests': 0, 'videos_requests': 0,
+                'limitations': ['搜尋結果由已保存的原始回應重新篩選。']}
+    write_outputs(settings, manifest, ranked)
+    return manifest, ranked
+
+
 def collect_comments(settings, opener=None, environ=None):
     """以前 N 支影片清單蒐集留言（含完整回覆）。留言關閉或無法存取的影片記錄後略過。"""
     spec = settings['research']['youtube_discovery']
@@ -179,7 +202,7 @@ def collect_comments(settings, opener=None, environ=None):
     comment_spec = settings['research'].get('youtube_comments', {})
     base = {'include_replies': True, 'max_top_level_per_video': comment_spec.get('max_top_level_per_video', 500),
             'max_requests': comment_spec.get('max_requests', 3000), 'timeout_seconds': spec['timeout_seconds']}
-    collector = YouTubeCollector({**base, 'video_ids': []}, _key(spec, environ), opener=opener)
+    collector = YouTubeCollector({**base, 'video_ids': []}, _key(spec, environ, settings['root']), opener=opener)
     rows, skipped = [], {}
     for video in listing['videos']:
         collector.spec = {**base, 'video_ids': [video['video_id']]}

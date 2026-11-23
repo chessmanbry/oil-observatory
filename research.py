@@ -32,6 +32,7 @@ def main(argv=None):
     c = sub.add_parser('cofacts', help='篩選 Cofacts 資料（dump 或 api）')
     c.add_argument('--mode', choices=['dump', 'api'])
     sub.add_parser('youtube-discover', help='建立 YouTube 前 100 支影片清單')
+    sub.add_parser('youtube-rerank', help='用已保存的 API 結果重新排名（不耗配額）')
     sub.add_parser('youtube-comments', help='蒐集前 100 支影片留言')
     e = sub.add_parser('annotate-export', help='匯出雙人標註表')
     e.add_argument('--out', default='data-kevin/annotation/sheet.csv')
@@ -55,6 +56,9 @@ def main(argv=None):
         elif args.command == 'youtube-discover':
             manifest, videos = youtube_discovery.discover(settings)
             print(f"YouTube 候選 {manifest['candidates']} 支，選取 {len(videos)} 支；配額約 {manifest['quota_units']} 單位")
+        elif args.command == 'youtube-rerank':
+            manifest, videos = youtube_discovery.rerank(settings)
+            print(f"重新篩選：候選 {manifest['candidates']} 支，選取 {len(videos)} 支；{manifest['audit']}")
         elif args.command == 'youtube-comments':
             manifest, records = youtube_discovery.collect_comments(settings)
             print(f"YouTube 留言保留 {len(records)} 筆；略過影片 {len(manifest['skipped_videos'])} 支")
