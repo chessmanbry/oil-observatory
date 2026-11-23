@@ -62,13 +62,6 @@ node --check web/app.js
 
 目前 31 項測試涵蓋 v1 管線與 v2 公開頁、審閱限制、排名計數、未知問句、撤回、資料版本和公開 API。瀏覽器已操作首頁、搜尋、明細、問答、正式排名空狀態與方法頁。Windows／macOS 實機驗證仍待完成。
 
-## Codex 與 GitHub
+## 版本控制與交接
 
-私人儲存庫：https://github.com/chessmanbry/oil-observatory 。先讀 AGENTS.md、CODEX_HANDOFF.md 與 docs/company_requirements.md。
-
-```bash
-git clone https://github.com/chessmanbry/oil-observatory.git
-cd oil-observatory
-```
-
-需要具備此私人儲存庫的存取權限。先前交接包中的 repository.bundle 保留同步前的本機提交歷史。GitHub 初始匯入由連線工具建立提交，檔案內容以 Git tree 雜湊核對。公開網站部署仍依公司文件的共同審閱流程執行。
+開始前先讀 AGENTS.md、docs-kevin/00_index.md 與 CODEX_HANDOFF.md（歷史交接紀錄）。推送前以 `git remote -v` 確認目標儲存庫。程式碼同步不代表網站已上線；公開網站部署須先完成指導老師與合作單位的共同審閱。
