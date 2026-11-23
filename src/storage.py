@@ -1,5 +1,6 @@
 import json
 import sqlite3
+from contextlib import contextmanager
 from pathlib import Path
 
 SCHEMA = '''
@@ -20,7 +21,18 @@ def db_path(root):
     return Path(root) / 'data/results/observatory.sqlite'
 
 
+@contextmanager
 def connect(root, readonly=False):
+    """Commit on success and always close; Windows keeps open SQLite files locked."""
+    connection = _open(root, readonly)
+    try:
+        with connection:
+            yield connection
+    finally:
+        connection.close()
+
+
+def _open(root, readonly=False):
     path = db_path(root)
     if readonly:
         connection = sqlite3.connect(path.resolve().as_uri() + '?mode=ro', uri=True)

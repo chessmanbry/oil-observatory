@@ -20,7 +20,7 @@ class CompanySiteTests(unittest.TestCase):
         shutil.copytree(ROOT / 'config', self.root / 'config')
         shutil.copytree(ROOT / 'data/editorial', self.root / 'data/editorial')
         shutil.copytree(ROOT / 'web', self.root / 'web')
-        self.topics = json.loads((self.root / 'data/editorial/topics.json').read_text())
+        self.topics = json.loads((self.root / 'data/editorial/topics.json').read_text(encoding='utf-8'))
 
     def tearDown(self):
         self.directory.cleanup()

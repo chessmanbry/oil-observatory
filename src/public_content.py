@@ -158,7 +158,7 @@ def catalogue(root, loaded=None):
     unique = {(r['channel'], r['id']) for r in records}
     return {'meta': {
         'title': config['site_title'], 'cooperation': config['cooperation'],
-        'document_version': config['document_version'], 'version': '2.0.0',
+        'document_version': config['document_version'], 'version': '3.0.0',
         'date_from': config['date_from'], 'date_to': config['date_to'],
         'categories': config['categories'], 'channels': config['required_channels'],
         'sample_count': len(unique), 'annotation_count': len(records),

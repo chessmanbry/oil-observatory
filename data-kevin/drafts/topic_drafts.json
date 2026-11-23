@@ -1,0 +1,279 @@
+{
+  "schema": "topic_drafts/1",
+  "drafts": [
+    {
+      "topic_id": "smoke-point",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [
+        "REF-HEAT-2004",
+        "REF-RISK-IARC"
+      ],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "olive-heat",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [
+        "REF-HEAT-2004",
+        "REF-RISK-IARC"
+      ],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "canola-fry",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "smoke-safety",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "reheat-count",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "dark-oil",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "frying-time",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [
+        "REF-HEAT-2004",
+        "REF-RISK-IARC"
+      ],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "trans-natural",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "trans-label",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "lard-compare",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "olive-best",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [
+        "REF-OLIVE-2011"
+      ],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "camellia",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "omega-heat",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "grape-seed",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [
+        "REF-HEAT-2004",
+        "REF-RISK-IARC"
+      ],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "soy-gmo",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "refining",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "glycidyl",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "pahs",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "oxidation-store",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    },
+    {
+      "topic_id": "salad-oil",
+      "status": "待編輯撰寫",
+      "kind": "待判讀",
+      "gap": "",
+      "answer": "",
+      "sources": [],
+      "qa_aliases": [],
+      "representative_summary": "",
+      "verify_points": [],
+      "candidate_reference_ids": [],
+      "note": "由編輯依官方（食藥署、國健署）或學術文獻填寫；來源須為 HTTPS。通過 drafts-check 並經指導老師與公司審閱前，不會進入公開網站。"
+    }
+  ]
+}

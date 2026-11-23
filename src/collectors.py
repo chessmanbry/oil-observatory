@@ -22,12 +22,16 @@ def load_local(root, kind, config):
         if not all(isinstance(r, dict) and r.get('is_mock') is True for r in rows):
             raise ValueError('mock 每筆必須明確設為 is_mock: true')
     else:
-        with path.open(encoding='utf-8-sig', newline='') as f:
-            reader = csv.DictReader(f)
-            required = {'id', 'source', 'text', 'published_at', 'is_mock'}
-            if not required.issubset(reader.fieldnames or []):
-                raise ValueError('CSV 缺少必要欄位：' + ', '.join(sorted(required)))
-            rows = list(reader)
+        try:
+            with path.open(encoding='utf-8-sig', newline='') as f:
+                reader = csv.DictReader(f)
+                required = {'id', 'source', 'text', 'published_at', 'is_mock'}
+                if not required.issubset(reader.fieldnames or []):
+                    raise ValueError('CSV 缺少必要欄位：' + ', '.join(sorted(required)))
+                rows = list(reader)
+        except UnicodeDecodeError:
+            # Excel on Traditional Chinese Windows often saves Big5/cp950.
+            raise ValueError('CSV 須為 UTF-8 編碼；Excel 請選「CSV UTF-8（逗號分隔）」另存') from None
     if not rows:
         raise ValueError('來源沒有資料；請先加入 CSV 紀錄或確認來源設定')
     return rows, {'collector': kind, 'network_used': False, 'warnings': []}

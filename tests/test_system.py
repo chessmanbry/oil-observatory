@@ -75,10 +75,10 @@ class SystemTests(unittest.TestCase):
     def test_path_safety(self):
         with self.assertRaises(ValueError):local_path(self.root,'../secret')
     def test_llm_rejected(self):
-        p=self.root/'config/analysis.yaml';p.write_text(p.read_text().replace('method: rules','method: llm'))
+        p=self.root/'config/analysis.yaml';p.write_text(p.read_text(encoding='utf-8').replace('method: rules','method: llm'),encoding='utf-8')
         with self.assertRaisesRegex(ValueError,'僅支援'):load_config(self.root)
     def test_csv_schema(self):
-        (self.root/'data/imports/comments.csv').write_text('text\n植物油\n')
+        (self.root/'data/imports/comments.csv').write_text('text\n植物油\n',encoding='utf-8')
         with self.assertRaisesRegex(ValueError,'缺少'):collect(self.root,'csv',self.config)
     def test_csv_real_pipeline(self):
         row=dict(fixture(),is_mock=False)
@@ -97,7 +97,7 @@ class SystemTests(unittest.TestCase):
         cid=execute(self.root)['claims'][0]['id']
         review_claim(self.root,cid,'證據不足',[],'測試審核人','條件不完整',{'categories':['健康風險'],'sentiment':'混合／待判讀'})
         r=execute(self.root);self.assertEqual(r['claims'][0]['review_status'],'已審核');self.assertEqual(r['claims'][0]['categories'],['健康風險'])
-        p=self.root/'config/analysis.yaml';p.write_text(p.read_text().replace("version: '1.0.0'","version: '1.0.1'"))
+        p=self.root/'config/analysis.yaml';p.write_text(p.read_text(encoding='utf-8').replace("version: '1.0.0'","version: '1.0.1'"),encoding='utf-8')
         r=execute(self.root);self.assertEqual(r['claims'][0]['review_status'],'待審核')
         with connect(self.root,readonly=True) as c:self.assertEqual(c.execute('SELECT count(*) FROM reviews').fetchone()[0],1)
     def test_reference_review_then_claim(self):
