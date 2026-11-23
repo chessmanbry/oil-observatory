@@ -1,0 +1,513 @@
+[
+  {
+    "id": "smoke-point",
+    "category": "發煙點與烹調方式",
+    "question": "發煙點越高，就越適合所有料理嗎？",
+    "kind": "待判讀",
+    "common_claim": "發煙點越高的油，任何烹調方式都比較好。",
+    "aliases": [
+      "發煙點越高，就越適合所有料理嗎？",
+      "發煙點",
+      "冒煙點",
+      "高溫",
+      "炒菜"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [
+      "REF-HEAT-2004",
+      "REF-RISK-IARC"
+    ],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "olive-heat",
+    "category": "發煙點與烹調方式",
+    "question": "橄欖油可以用來煎炒嗎？",
+    "kind": "待判讀",
+    "common_claim": "橄欖油只能涼拌，不能加熱。",
+    "aliases": [
+      "橄欖油可以用來煎炒嗎？",
+      "橄欖油",
+      "煎炒",
+      "加熱"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [
+      "REF-HEAT-2004",
+      "REF-RISK-IARC"
+    ],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "canola-fry",
+    "category": "油炸與回鍋油",
+    "question": "芥花油可以拿來炸東西嗎？",
+    "kind": "待判讀",
+    "common_claim": "芥花油不適合油炸。",
+    "aliases": [
+      "芥花油可以拿來炸東西嗎？",
+      "芥花油",
+      "菜籽油",
+      "油炸"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "smoke-safety",
+    "category": "發煙點與烹調方式",
+    "question": "油開始冒煙，代表什麼？",
+    "kind": "待判讀",
+    "common_claim": "油冒煙就表示吃下去一定會生病。",
+    "aliases": [
+      "油開始冒煙，代表什麼？",
+      "冒煙",
+      "發煙點"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "reheat-count",
+    "category": "油炸與回鍋油",
+    "question": "炸油能不能再次使用？",
+    "kind": "待判讀",
+    "common_claim": "炸油只要過濾，就可以一直重複使用。",
+    "aliases": [
+      "炸油能不能再次使用？",
+      "回鍋油",
+      "炸油",
+      "過濾"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "dark-oil",
+    "category": "油炸與回鍋油",
+    "question": "油的顏色可以判斷品質嗎？",
+    "kind": "待判讀",
+    "common_claim": "炸油顏色沒有變黑，就不需要更換。",
+    "aliases": [
+      "油的顏色可以判斷品質嗎？",
+      "炸油",
+      "顏色",
+      "換油"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "frying-time",
+    "category": "油炸與回鍋油",
+    "question": "加熱時間會影響油品變化嗎？",
+    "kind": "待判讀",
+    "common_claim": "只要沒有冒煙，長時間加熱都沒關係。",
+    "aliases": [
+      "加熱時間會影響油品變化嗎？",
+      "加熱",
+      "時間",
+      "油品氧化"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [
+      "REF-HEAT-2004",
+      "REF-RISK-IARC"
+    ],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "trans-natural",
+    "category": "反式脂肪",
+    "question": "所有植物油都有反式脂肪嗎？",
+    "kind": "待判讀",
+    "common_claim": "植物油都含有大量反式脂肪。",
+    "aliases": [
+      "所有植物油都有反式脂肪嗎？",
+      "植物油",
+      "反式脂肪"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "trans-label",
+    "category": "反式脂肪",
+    "question": "標示零反式脂肪要怎麼看？",
+    "kind": "待判讀",
+    "common_claim": "零反式脂肪代表整體營養與安全都相同。",
+    "aliases": [
+      "標示零反式脂肪要怎麼看？",
+      "反式脂肪",
+      "標示"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "lard-compare",
+    "category": "油種比較",
+    "question": "豬油和植物油該怎麼比較？",
+    "kind": "待判讀",
+    "common_claim": "豬油一定比所有植物油健康。",
+    "aliases": [
+      "豬油和植物油該怎麼比較？",
+      "豬油",
+      "植物油",
+      "健康"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "olive-best",
+    "category": "油種比較",
+    "question": "有一種適合所有人的健康油嗎？",
+    "kind": "待判讀",
+    "common_claim": "橄欖油在所有情境下都是最健康的油。",
+    "aliases": [
+      "有一種適合所有人的健康油嗎？",
+      "橄欖油",
+      "油種比較",
+      "健康"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [
+      "REF-OLIVE-2011"
+    ],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "camellia",
+    "category": "油種比較",
+    "question": "苦茶籽油的說法該如何查證？",
+    "kind": "待判讀",
+    "common_claim": "苦茶籽油有特定健康效果，所以每個人都適用。",
+    "aliases": [
+      "苦茶籽油的說法該如何查證？",
+      "苦茶籽油",
+      "苦茶油",
+      "健康"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "omega-heat",
+    "category": "油種比較",
+    "question": "Omega-3 含量能決定烹調用途嗎？",
+    "kind": "待判讀",
+    "common_claim": "Omega-3 越多的油，越適合高溫油炸。",
+    "aliases": [
+      "Omega-3 含量能決定烹調用途嗎？",
+      "Omega-3",
+      "油炸"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "grape-seed",
+    "category": "油種比較",
+    "question": "葡萄籽油適合哪些烹調情境？",
+    "kind": "待判讀",
+    "common_claim": "葡萄籽油發煙點高，就能反覆高溫加熱。",
+    "aliases": [
+      "葡萄籽油適合哪些烹調情境？",
+      "葡萄籽油",
+      "發煙點"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [
+      "REF-HEAT-2004",
+      "REF-RISK-IARC"
+    ],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "soy-gmo",
+    "category": "基改與精煉",
+    "question": "基改油品的說法如何核對？",
+    "kind": "待判讀",
+    "common_claim": "只要原料是基改作物，油品就一定有特定危害。",
+    "aliases": [
+      "基改油品的說法如何核對？",
+      "基改油",
+      "基改",
+      "大豆油"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "refining",
+    "category": "基改與精煉",
+    "question": "精煉和冷壓的差別怎麼看？",
+    "kind": "待判讀",
+    "common_claim": "精煉油一定不好，冷壓油一定適合所有料理。",
+    "aliases": [
+      "精煉和冷壓的差別怎麼看？",
+      "精煉油",
+      "精製",
+      "冷壓"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "glycidyl",
+    "category": "食安事件",
+    "question": "縮水甘油脂肪酸酯的消息怎麼讀？",
+    "kind": "待判讀",
+    "common_claim": "只要檢出縮水甘油脂肪酸酯，就能判斷所有油品風險相同。",
+    "aliases": [
+      "縮水甘油脂肪酸酯的消息怎麼讀？",
+      "縮水甘油脂肪酸酯",
+      "GE"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "pahs",
+    "category": "食安事件",
+    "question": "BaP 和 PAHs 的消息代表什麼？",
+    "kind": "待判讀",
+    "common_claim": "只看污染物名稱，就能判斷日常食用風險。",
+    "aliases": [
+      "BaP 和 PAHs 的消息代表什麼？",
+      "苯駢芘",
+      "BaP",
+      "Benzopyrene",
+      "PAHs",
+      "PAH4",
+      "多環芳香烴"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "oxidation-store",
+    "category": "發煙點與烹調方式",
+    "question": "開封後的保存方式重要嗎？",
+    "kind": "待判讀",
+    "common_claim": "食用油放在哪裡，品質都不會受影響。",
+    "aliases": [
+      "開封後的保存方式重要嗎？",
+      "保存",
+      "油品氧化",
+      "酸敗"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  },
+  {
+    "id": "salad-oil",
+    "category": "油種比較",
+    "question": "沙拉油一定只能涼拌嗎？",
+    "kind": "待判讀",
+    "common_claim": "名稱叫沙拉油，就只能用來拌沙拉。",
+    "aliases": [
+      "沙拉油一定只能涼拌嗎？",
+      "沙拉油",
+      "涼拌"
+    ],
+    "gap": "",
+    "answer": "",
+    "sources": [],
+    "candidate_reference_ids": [],
+    "representative_summary": "",
+    "approvals": {
+      "teacher": null,
+      "company": null
+    },
+    "withdrawn": false,
+    "origin": "editorial_demo",
+    "qa_aliases": []
+  }
+]

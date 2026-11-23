@@ -1,0 +1,332 @@
+[
+  {
+    "id": "DEMO-001",
+    "source": "YouTube",
+    "text": "植物油只要高溫加熱就會有毒嗎？我最近不敢買。",
+    "published_at": "2026-10-21T09:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-001",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-002",
+    "source": "YouTube",
+    "text": "我今年62歲，想知道橄欖油能不能拿來炒菜。",
+    "published_at": "2026-10-22T10:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-002",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-003",
+    "source": "料理社團",
+    "text": "媽媽說植物油高溫會致癌，所以叫我換成苦茶油。",
+    "published_at": "2026-10-23T11:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-003",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-004",
+    "source": "PTT",
+    "text": "橄欖油連續加熱七小時，跟家裡炒五分鐘的結果能一樣嗎？",
+    "published_at": "2026-10-24T12:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-004",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-005",
+    "source": "YouTube",
+    "text": "看到植物油油炸會出現醛類的影片，我有點擔心。",
+    "published_at": "2026-10-25T13:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-005",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-006",
+    "source": "料理社團",
+    "text": "請問芥花油反覆使用三天還能繼續炸嗎？",
+    "published_at": "2026-10-26T14:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-006",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-007",
+    "source": "YouTube",
+    "text": "橄欖油發煙點是不是唯一判斷適不適合加熱的標準？",
+    "published_at": "2026-10-27T15:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-007",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-008",
+    "source": "PTT",
+    "text": "我不是說植物油加熱一定有毒，溫度和時間應該也要看。",
+    "published_at": "2026-10-28T16:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-008",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-009",
+    "source": "料理社團",
+    "text": "我用苦茶油熱炒，喜歡這個香味。",
+    "published_at": "2026-10-29T17:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-009",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-010",
+    "source": "YouTube",
+    "text": "芥花油加熱到180°C，跟240°C的研究不能直接混在一起吧。",
+    "published_at": "2026-10-20T08:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-010",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-011",
+    "source": "YouTube",
+    "text": "植物油一冒煙就代表吃一口會致癌？這種講法太誇張了。",
+    "published_at": "2026-10-21T09:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-011",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-012",
+    "source": "料理社團",
+    "text": "我今年55歲，看完植物油加熱的討論，打算減少使用。",
+    "published_at": "2026-10-22T10:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-012",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-013",
+    "source": "PTT",
+    "text": "植物油高溫會有毒；橄欖油一定比其他油健康。",
+    "published_at": "2026-10-23T11:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-013",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-014",
+    "source": "YouTube",
+    "text": "橄欖油是所有油裡最健康的，所以我想買。",
+    "published_at": "2026-10-24T12:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-014",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-015",
+    "source": "料理社團",
+    "text": "苦茶油比較好還是橄欖油比較好？健康是看哪個指標？",
+    "published_at": "2026-10-25T13:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-015",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-016",
+    "source": "YouTube",
+    "text": "橄欖油多酚是不是跟膽固醇氧化有關？",
+    "published_at": "2026-10-26T14:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-016",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-017",
+    "source": "PTT",
+    "text": "初榨橄欖油太貴，雖然喜歡，還是考慮改買別的品牌。",
+    "published_at": "2026-10-27T15:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-017",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-018",
+    "source": "料理社團",
+    "text": "我媽65歲，說得意的一天不好，我想找健康研究給她看。",
+    "published_at": "2026-10-28T16:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-018",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-019",
+    "source": "YouTube",
+    "text": "我今年48歲，很喜歡得意的一天，會繼續買，但不清楚健康差異。",
+    "published_at": "2026-10-29T17:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-019",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-020",
+    "source": "PTT",
+    "text": "橄欖油不是吃越多就越健康，請問有沒有比較研究？",
+    "published_at": "2026-10-20T08:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-020",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-021",
+    "source": "料理社團",
+    "text": "苦茶油冷壓和精製的成分標示有差別嗎？",
+    "published_at": "2026-10-21T09:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-021",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-022",
+    "source": "YouTube",
+    "text": "看到橄欖油降低膽固醇的說法，想知道研究測量什麼。",
+    "published_at": "2026-10-22T10:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-022",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-023",
+    "source": "料理社團",
+    "text": "這款橄欖油味道好用得很滿意，可是健康宣稱還是想看出處。",
+    "published_at": "2026-10-23T11:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-023",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-024",
+    "source": "PTT",
+    "text": "得意的一天最近價格變貴了，不知道哪裡買比較划算。",
+    "published_at": "2026-10-24T12:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-024",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-025",
+    "source": "YouTube",
+    "text": "只要叫橄欖油，健康效果就全部一樣嗎？",
+    "published_at": "2026-10-25T13:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-025",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-026",
+    "source": "料理社團",
+    "text": "植物油只要高溫加熱就會有毒嗎？我最近不敢買。",
+    "published_at": "2026-10-26T14:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-026",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-027",
+    "source": "PTT",
+    "text": "機油高溫故障，請問怎麼修？",
+    "published_at": "2026-10-27T15:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-027",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-028",
+    "source": "YouTube",
+    "text": "這道菜看起來好吃，謝謝分享。",
+    "published_at": "2026-10-28T16:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-028",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-029",
+    "source": "料理社團",
+    "text": "我今年70歲，想問苦茶油是不是最健康的選擇。",
+    "published_at": "2026-10-29T17:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-029",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-030",
+    "source": "YouTube",
+    "text": "橄欖油價格便宜又推薦，家裡長輩也喜歡。",
+    "published_at": "2026-10-20T08:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-030",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-031",
+    "source": "PTT",
+    "text": "植物油有毒才怪，難道看一個影片就能下結論？",
+    "published_at": "2026-10-21T09:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-031",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-032",
+    "source": "料理社團",
+    "text": "我想買橄欖油；但媽媽說高溫加熱很危險，暫時不買。",
+    "published_at": "2026-10-22T10:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-032",
+    "parent_id": ""
+  },
+  {
+    "id": "DEMO-001",
+    "source": "YouTube",
+    "text": "植物油只要高溫加熱就會有毒嗎？我最近不敢買。",
+    "published_at": "2026-10-21T09:00:00+08:00",
+    "url": "",
+    "is_mock": true,
+    "author_key": "fictional-001",
+    "parent_id": ""
+  }
+]

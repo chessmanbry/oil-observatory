@@ -1,0 +1,18 @@
+# 日期以 Asia/Taipei 解讀，首尾日期皆包含；null 代表不限。
+date_from: null
+date_to: null
+mock:
+  enabled: true
+  path: data/mock/comments.json
+csv:
+  enabled: true
+  path: data/imports/comments.csv
+youtube:
+  enabled: false
+  api_key_env: YOUTUBE_API_KEY
+  video_ids: []
+  include_replies: true
+  max_top_level_per_video: 100
+  max_requests: 30
+  timeout_seconds: 20
+# PTT、Dcard 與 FB 於第一階段僅接受人工 CSV 匯入；未實作自動爬蟲。

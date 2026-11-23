@@ -1,0 +1,15 @@
+document_version: '2026-11-19'
+site_title: 食用油網路迷思分析
+cooperation: 台北大學資工系 × 詠鑠生活
+date_from: '2024-11-23'
+date_to: '2026-11-23'
+language: zh-Hant
+required_channels: [Cofacts, YouTube]
+youtube_target: 100
+ranking_limit: 20
+# 本版採真實樣本中的散播筆數排序，同分按議題 ID 排序。
+ranking_basis: 散播筆數
+categories: [食安事件, 發煙點與烹調方式, 反式脂肪, 油炸與回鍋油, 油種比較, 基改與精煉]
+keywords:
+  oil_types: [芥花油, 菜籽油, 橄欖油, 沙拉油, 大豆油, 葡萄籽油, 豬油, 苦茶籽油]
+  terms: [發煙點, 冒煙點, 反式脂肪, 回鍋油, 油炸油, 油品氧化, 基改油, 精煉油, Omega-3, 縮水甘油脂肪酸酯, 苯駢芘, BaP, Benzopyrene, PAHs, 多環芳香烴, PAH4]

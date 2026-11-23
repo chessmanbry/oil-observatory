@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="查閱食用油常見說法、研究證據與已審閱問答。台北大學資工系與詠鑠生活產學合作專題。">
+<title>油品風向標｜食用油迷思查證</title>
+<link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="#home"><span class="brand-symbol" aria-hidden="true">油</span><span>油品風向標<small>食用油網路迷思分析</small></span></a><nav aria-label="主要選單"><a href="#topics" data-nav="topics">迷思與疑問</a><a href="#ask" data-nav="ask">簡易問答</a><a href="#methods" data-nav="methods">研究方法</a></nav><span class="project-label">產學合作專題</span></div></header>
+<main id="main">
+<section id="home-view" class="view">
+<div class="hero"><div class="hero-main"><p class="eyebrow">台北大學資工系 × 詠鑠生活</p><h1>關於食用油，<br>把疑問交給<span>證據。</span></h1><p class="hero-description">從日常煎炒，到油品健康說法。<br>一起看懂流傳的主張、研究的條件與答案的出處。</p><form id="hero-form" class="hero-search" role="search"><label class="sr-only" for="hero-query">搜尋食用油問題</label><input id="hero-query" maxlength="500" placeholder="例如：芥花油可以拿來炸東西嗎？" required><button type="submit">查詢答案</button></form><div class="suggestions"><span>從這些問題開始</span><button type="button" data-question="橄欖油可以用來煎炒嗎？">橄欖油可以煎炒嗎？</button><button type="button" data-question="炸油能不能再次使用？">炸油能再次使用嗎？</button></div></div><aside class="hero-note"><div class="note-top">先看說法，再看依據</div><div class="note-step"><span>常見說法</span><p>「發煙點越高，<br>就越適合所有料理？」</p></div><div class="note-step"><span>查核需要的條件</span><p>油的種類、溫度、加熱時間，<br>以及研究測量的結果。</p></div><div class="note-foot"><span class="status-tag pending">待審閱示範</span><small>正式答案經雙方審閱後提供</small></div></aside></div>
+<div class="content-width"><div id="preview-notice" class="preview-notice" role="note"><strong>目前為公司需求版預覽</strong><span>20 個候選議題供確認內容與操作。真實樣本、正式 Top 20 與已審閱答案待建立。</span></div><section class="overview-strip" aria-label="內容狀態" id="home-stats"></section>
+<section class="section-block"><div class="section-heading"><div><p class="eyebrow">從烹調情境找問題</p><h2>你想了解哪一類？</h2></div><a class="plain-link" href="#topics">瀏覽全部議題</a></div><div id="category-grid" class="category-grid"></div></section>
+<section class="section-block"><div class="section-heading"><div><p class="eyebrow">主張 × 落差 × 研究證據</p><h2>先從這幾個議題看起</h2></div><span class="secondary-note">候選示範，排序依編輯安排</span></div><div id="featured-topics" class="topic-grid"></div></section>
+<section class="qa-invite"><div><p class="eyebrow">簡易問答</p><h2>有個具體的用油問題？</h2><p>輸入問題，查詢已經審閱的答案與出處。</p></div><a class="button primary" href="#ask">前往問答</a></section></div>
+</section>
+<section id="topics-view" class="view content-width" hidden><div class="page-heading"><p class="eyebrow">食用油資訊頁</p><h1>迷思與疑問</h1><p>先讀懂大家怎麼說，再看證據能回答到哪裡。</p></div><div class="filter-panel"><div class="search-field"><label for="topic-query">搜尋議題</label><input id="topic-query" type="search" placeholder="搜尋油種、發煙點、反式脂肪…"></div><div><label for="topic-status">內容範圍</label><select id="topic-status"><option value="all">全部候選議題</option><option value="reviewed">已審閱內容</option><option value="ranked">正式 Top 20</option></select></div><button id="clear-filters" class="button subtle">清除篩選</button></div><div id="category-filters" class="category-filters" aria-label="依分類篩選"></div><p id="topic-result-count" class="result-count" aria-live="polite"></p><div id="topic-results" class="topic-grid"></div></section>
+<section id="ask-view" class="view content-width" hidden><div class="page-heading"><p class="eyebrow">根據已審閱的內容回答</p><h1>用你的方式，問一個問題。</h1><p>每份答案都附出處與審閱日期。尚未收錄的問題會明確告知。</p></div><div class="ask-layout"><div class="ask-main"><form id="ask-form"><label for="question">你的食用油問題</label><textarea id="question" maxlength="500" rows="4" placeholder="例如：芥花油可以拿來炸東西嗎？" required></textarea><div class="form-foot"><span id="char-count">0 / 500 字</span><button id="ask-button" type="submit" class="button primary">查詢已審閱答案</button></div></form><section id="answer-result" aria-live="polite" aria-busy="false"></section></div><aside class="ask-aside"><h2>可以從這裡開始</h2><div id="question-suggestions"></div><div class="aside-note"><h3>答案如何產生？</h3><p>問題會比對已審閱的問題和同義問法，並讀取對應答案與出處。</p><p id="reviewed-summary"></p></div></aside></div></section>
+<section id="methods-view" class="view content-width" hidden><div class="page-heading"><p class="eyebrow">依據 2026 年 11 月 19 日公司需求</p><h1>我們如何整理這些說法</h1><p>研究範圍、資料筆數與判讀方式，都能查閱。</p></div><div id="method-content"></div></section>
+<section id="detail-view" class="view content-width detail-width" hidden><a href="#topics" class="back-link">回到議題列表</a><article id="topic-detail"></article></section>
+<div id="load-status" class="content-width loading" role="status">正在讀取內容…</div>
+</main>
+<footer class="site-footer"><div class="content-width footer-inner"><div class="footer-brand">油品風向標<p>台北大學資工系 × 詠鑠生活</p></div><div><a href="#methods">研究方法與資料限制</a><p>本機預覽 · 公司需求版 v2.0.0</p></div></div></footer>
+</body></html>

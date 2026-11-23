@@ -1,0 +1,5 @@
+Validated runtime: Python 3.12.14
+PyYAML 6.0.3
+Browser: Chrome (Linux QA)
+Tests: 23 passed
+No actual YouTube API credentials used.

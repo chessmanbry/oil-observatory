@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="油品疑慮的輿情監測、主張整理與可追溯文獻對照。第一階段本機系統。">
+  <title>油品風向標 · Oil Observatory</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/research/style.css">
+  <script src="/research/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><img src="/favicon.svg" alt="" width="38" height="38"><span>油品風向標<small>OIL OBSERVATORY</small></span></a>
+    <div class="workspace-label">研究工作區 <span>STAGE 01</span></div>
+    <nav aria-label="主要導覽">
+      <button class="nav active" data-view="overview"><span aria-hidden="true">◫</span>輿情總覽</button>
+      <button class="nav" data-view="claims"><span aria-hidden="true">≡</span>主張與案例<span id="claim-count" class="nav-count">—</span></button>
+      <button class="nav" data-view="evidence"><span aria-hidden="true">▤</span>文獻證據庫</button>
+      <button class="nav" data-view="lineage"><span aria-hidden="true">⌘</span>資料與執行紀錄</button>
+      <button class="nav" data-view="settings"><span aria-hidden="true">⚙</span>設定與方法</button>
+    </nav>
+    <div class="sidebar-note"><span class="dot"></span>本機工作模式<p>設定、分析與呈現分離<br>每個判斷都留下依據。</p></div>
+    <div class="sidebar-foot">永爍 · 油品研究專案<small>第一階段 / v1.0.0</small></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><span id="breadcrumb">工作區 / 輿情總覽</span><div><span class="pill neutral">唯讀儀表板</span><button id="refresh" class="text-btn">↻ 更新資料</button></div></header>
+    <main id="main" tabindex="-1">
+      <div id="loading" role="status">正在讀取本機分析結果…</div>
+      <div id="application" hidden>
+        <div class="page-heading"><div><div class="eyebrow">CONSUMER INSIGHTS × SCIENTIFIC EVIDENCE</div><h1 id="page-title">把疑慮看清楚，讓依據可追溯。</h1><p id="page-subtitle">從網路討論到研究證據，理解每一個關於油的問題。</p></div><button id="export" class="button secondary">↓ 匯出篩選結果</button></div>
+        <div id="demo-banner" class="notice"><strong>模擬案例工作區</strong><span>目前為假設留言，僅供流程驗證，不代表真實市場聲量。科學判斷須經人工審核。</span></div>
+        <section id="filter-panel" class="filters" aria-label="篩選資料">
+          <label>資料類型<select id="kind"><option value="mock">模擬資料</option><option value="real">真實資料</option></select></label>
+          <label>案例主題<select id="case"><option value="all">全部案例</option></select></label>
+          <label>討論來源<select id="source"><option value="all">全部來源</option></select></label>
+          <label>開始日期<input type="date" id="from"></label><label>結束日期<input type="date" id="to"></label>
+          <label class="search-label">搜尋原文或主張<input type="search" id="search" placeholder="例如：橄欖油、加熱"></label>
+          <button id="reset" class="text-btn">重設</button>
+        </section>
+        <div id="filter-summary" class="filter-summary" aria-live="polite"></div>
+        <div id="content"></div>
+        <footer class="main-footer"><span>中立呈現 · 保留不確定性 · 回到原始證據</span><span id="updated"></span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="detail"><div class="dialog-head"><span>主張追溯 / CLAIM TRACE</span><button id="close-detail" class="button secondary" aria-label="關閉主張明細">關閉 ×</button></div><div id="detail-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body></html>
