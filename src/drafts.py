@@ -1,4 +1,4 @@
-"""議題答案草稿接口（data-kevin/drafts/topic_drafts.json）。
+"""議題答案草稿接口（data/drafts/topic_drafts.json）。
 
 草稿與公開內容分離：check 只做格式與完整度檢查；apply 需明確 --confirm 才把單一議題的草稿
 寫入 data/editorial/topics.json，且一律清空雙方審閱，必須重新審閱才會公開。

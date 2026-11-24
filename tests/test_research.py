@@ -109,7 +109,7 @@ class ResearchTests(unittest.TestCase):
         self.assertNotIn('userIdsha256', json.dumps(records))
 
     def test_cofacts_dump_from_zip_and_manifest(self):
-        dump = self.root / 'data-kevin/raw/cofacts'
+        dump = self.root / 'data/raw/cofacts'
         dump.mkdir(parents=True)
         for name, rows in (('articles', self.articles()), ('article_replies', [
                 {'articleId': 'a1', 'replyType': 'RUMOR', 'status': 'NORMAL'},

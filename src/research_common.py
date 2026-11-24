@@ -1,6 +1,6 @@
 """v3 研究管線共用工具：設定、關鍵詞比對、語言判定、去識別化與期間篩選。
 
-此模組不連網。產出只寫入 data-kevin/（原始與處理後資料已列入 .gitignore）。
+此模組不連網。產出只寫入 data/（原始與處理後資料已列入 .gitignore）。
 """
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -62,7 +62,7 @@ def load_settings(root, keywords_path=None):
     start, end = date.fromisoformat(str(company['date_from'])), date.fromisoformat(str(company['date_to']))
     if start > end:
         raise ValueError('研究期間起日晚於迄日')
-    out = (root / research.get('output_dir', 'data-kevin')).resolve()
+    out = (root / research.get('output_dir', 'data')).resolve()
     if not out.is_relative_to(root.resolve()):
         raise ValueError('output_dir 須位於專案內')
     return {

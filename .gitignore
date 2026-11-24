@@ -16,8 +16,10 @@ data/editorial/observations.json
 data/editorial/history/
 data/references/history/
 SHA256SUMS.txt
-# v3 研究產出：原始資料、處理後資料、標註表與報告不入版控
-data-kevin/raw/
-data-kevin/processed/
-data-kevin/annotation/
-data-kevin/reports/
+# v3 研究產出：原始資料、處理後資料、標註表、草稿與報告不入版控
+data/raw/cofacts/
+data/raw/*.json
+data/processed/
+data/annotation/
+data/drafts/
+data/reports/

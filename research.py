@@ -1,10 +1,10 @@
-"""v3 研究資料管線命令列。操作說明見 docs-kevin/10_operator_guide.md。
+"""v3 研究資料管線命令列。操作步驟見交接文件。
 
   python research.py cofacts [--mode dump|api]
   python research.py youtube-discover
   python research.py youtube-comments
-  python research.py annotate-export --out data-kevin/annotation/sheet.csv [--sample 300]
-  python research.py annotate-import data-kevin/annotation/sheet.csv [--install]
+  python research.py annotate-export --out data/annotation/sheet.csv [--sample 300]
+  python research.py annotate-import data/annotation/sheet.csv [--install]
   python research.py drafts-check
   python research.py drafts-apply TOPIC_ID --editor 姓名 --confirm
   python research.py report
@@ -35,7 +35,7 @@ def main(argv=None):
     sub.add_parser('youtube-rerank', help='用已保存的 API 結果重新排名（不耗配額）')
     sub.add_parser('youtube-comments', help='蒐集前 100 支影片留言')
     e = sub.add_parser('annotate-export', help='匯出雙人標註表')
-    e.add_argument('--out', default='data-kevin/annotation/sheet.csv')
+    e.add_argument('--out', default='data/annotation/sheet.csv')
     e.add_argument('--sample', type=int)
     e.add_argument('--seed', type=int, default=20261119)
     i = sub.add_parser('annotate-import', help='匯入標註表、計算一致性、產生正式樣本')

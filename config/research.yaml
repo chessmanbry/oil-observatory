@@ -1,13 +1,13 @@
 # v3 研究資料管線設定（Cofacts、YouTube 前 100、規則預標註）。
 # 研究期間、渠道與公司關鍵詞沿用 config/company.yaml；可用 --keywords 指定另一份關鍵詞檔重跑。
-output_dir: data-kevin
+output_dir: data
 
 cofacts:
-  # 合法取得途徑（見 docs-kevin/02_cofacts.md）：
+  # 合法取得途徑：
   #   dump：在 Hugging Face 登入並同意 Cofacts Data User Agreement 後，手動下載 articles 與 article_replies CSV（或 zip）。
   #   api ：向 Cofacts 工作小組（cofacts@googlegroups.com）申請 app-id，放入環境變數；不得借用其他應用程式的 app-id。
   mode: dump
-  dump_dir: data-kevin/raw/cofacts
+  dump_dir: data/raw/cofacts
   app_id_env: COFACTS_APP_ID
   api_url: https://api.cofacts.tw/graphql
   api_page_size: 50
