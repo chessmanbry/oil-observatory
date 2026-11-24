@@ -37,6 +37,11 @@ youtube_discovery:
   # 標題／說明含以下字樣視為廣告或業配候選，列入人工覆核欄，不自動刪除。
   ad_markers: [業配, 廣告, 贊助, 合作, 團購, 優惠碼, 折扣碼, 開箱, '#ad', sponsored]
 
+youtube_comments:
+  # 2026-11-24：預設 500 則／3000 次請求會超額，改為每支 200 則、上限 4000 次（每次約 1 配額單位）。
+  max_top_level_per_video: 200
+  max_requests: 4000
+
 exclude_phrases: [機油, 汽油, 柴油, 精油, 按摩油, 保養油, 卸妝油, 護髮油, 嬰兒油, 潤滑油, 魚油, 魚肝油, 磷蝦油, 保健食品, 營養補充]
 
 annotation:

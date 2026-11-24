@@ -209,11 +209,15 @@ def collect_comments(settings, opener=None, environ=None):
         try:
             got, _ = collector.collect()
         except ValueError as exc:
-            if 'HTTP 403' in str(exc) or 'HTTP 404' in str(exc):
+            # 403 留言關閉、404 影片不存在、400 為 YouTube 對個別影片偶發的 processingFailure。
+            if any(code in str(exc) for code in ('HTTP 400', 'HTTP 403', 'HTTP 404')):
                 skipped[video['video_id']] = str(exc)
                 continue
             raise
         rows.extend(got)
+    if listing['videos'] and len(skipped) == len(listing['videos']):
+        # 全部影片都失敗多半是金鑰或請求格式問題，而非個別影片，不寫入空結果。
+        raise ValueError('所有影片的留言請求皆失敗；請檢查金鑰與配額。此次不寫入結果。')
     records, audit = [], Counter()
     for row in rows:
         audit['read'] += 1

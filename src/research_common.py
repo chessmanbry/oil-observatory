@@ -19,7 +19,8 @@ _SIMP -= _TRAD
 URL_RE = re.compile(r'https?://\S+|www\.\S+', re.I)
 EMAIL_RE = re.compile(r'[\w.+-]+@[\w-]+\.[\w.-]+')
 PHONE_RE = re.compile(r'(?<!\d)(?:\+?886[-\s]?|0)9\d{2}[-\s]?\d{3}[-\s]?\d{3}(?!\d)|(?<!\d)0\d{1,2}[-\s]?\d{3,4}[-\s]?\d{4}(?!\d)')
-MENTION_RE = re.compile(r'(?<![\w.])@[\w.\-一-鿿]{2,30}')
+# 不限制 @ 前方字元：YouTube 回覆常見 "@t@handle"、"張@張某某" 這類黏在文字中的帳號。電子郵件已先被遮蔽。
+MENTION_RE = re.compile(r'@[\w.\-一-鿿]{1,30}')
 LINE_ID_RE = re.compile(r'(?i)(line\s*(?:id)?\s*[:：]\s*)\S+')
 
 

@@ -56,6 +56,11 @@ class ResearchTests(unittest.TestCase):
         for leak in ('x.com', '0912', 'a.b@c.com', '小明哥', 'abc123'):
             self.assertNotIn(leak, masked)
 
+    def test_deidentify_masks_glued_mentions(self):
+        for text, leak in (('@t@threecats1219oogle 義美', 'threecats'), ('@張@張思聰-s2t。是的', '張思聰'),
+                           ('@C@CH-jn4qw惜它不是', 'CH-jn4qw')):
+            self.assertNotIn(leak, deidentify(text))
+
     def test_language_and_window(self):
         self.assertEqual(language('芥花油發煙點很高嗎'), 'zh-Hant')
         self.assertEqual(language('这个油发烟点高吗'), 'zh-Hans')
